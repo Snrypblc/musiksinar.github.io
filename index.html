@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="♫♪ Music Player 🎸 is a simple project developed using JavaScript, CSS, and HTML. Listen your self-made songs collection"/>
+        <meta name="author" content="Samir Paul">
+        <meta name="keywords" content="Music, Music Player, Audio Player, PlayList, Songs, Music Collection, HTML, CSS, JS, Music App">
+        <meta name="robots" content="index, follow">
+        <meta name="p:domain_verify" content="24bac6e1fbf1750de40d59bb788d9dd9"/>
+        <meta name="google-site-verification" content="Q8eN3pbxrWIGkLCDZKniG3jMtd9cO9WtGPM363QSPeM" />
+        <link rel="canonical" href="https://samirpaul1.github.io/music/"/>
+        <meta property="og:url" content="https://samirpaul1.github.io/music/"/>
+
+        <title>SnryPblc</title>
+        <link rel="stylesheet" type="text/css" href="sinr.css">
+        <link rel="stylesheet" type="text/css" href="reposiv.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+    </head>
+    <body>
+        <nav>
+          <div class="logo">
+            <h4>snry</h4>
+          </div>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AfaIyh</a></li>
+            <li><a href="#">Galery</a></li>
+          </ul>
+
+          <div class="menu-toggle">
+            <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </nav>
+        <script src="script.js"></script>
+        <section>
+            <img src="asset/imgs/bintang.png" id="bintang">
+            <img src="asset/imgs/bulan.png" id="bulan">
+            <img src="asset/imgs/gunung.png" id="gunung">
+            <h2 id="text">Snry</h2>
+            <a href="#" id="btn">AfaIyh</a>
+            <img src="asset/imgs/bukit.png" id="bukit">
+        </section>
+        <div class="sec" id="sec">
+          <h2>Sinar</h2>
+          <marquee><p>Tak Perlu Sibuk Mencari Telinga, Sebagai Tempat Menceritakan Masalahmu. INGAT, Tuhanmu Maha Pendengar </p></marquee>
+            <br><br>
+            <h5>AfaIyh...</h5>
+          
+
+          <!--Bagian Musik-->
+          <div class="wrapper">
+                <div class="top-bar">
+                  <i class="material-icons">expand_more</i>
+                  <span>Joget dongs</span>
+                  <i class="material-icons">more_horiz</i>
+                </div>
+                <div class="img-area">
+                  <img src="" alt="">
+                </div>
+                <div class="song-details">
+                  <p class="name"></p>
+                  <p class="artist"></p>
+                </div>
+                <div class="progress-area">
+                  <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                  </div>
+                  <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                  </div>
+                </div>
+                <div class="controls">
+                  <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                  <i id="prev" class="material-icons">skip_previous</i>
+                  <div class="play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                  </div>
+                  <i id="next" class="material-icons">skip_next</i>
+                  <i id="more-music" class="material-icons">queue_music</i>
+                </div>
+                <div class="music-list">
+                  <div class="header">
+                    <div class="row">
+                      <i class= "list material-icons">queue_music</i>
+                      <span>Music list</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                  </div>    
+                </div>
+              </div>
+        <!--End Musik-->
+        <!--card-->
+        <section id="card">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mouse-box1">
+                  <img src="images/page1.gif" alt="Aula s20" class="mouse-img" />
+                  <a href="https://www.aulaindonesia.com/mouse-s-20-macro-7-buttons-breathe-light.html?o=terbaru" class="btn btn-light mouse-detail-button">Show Details</a>
+                </div><br>
+                <div class="mouse-box">
+                  <img src="images/profil.gif" alt="Aula s20" class="mouse-img" />
+                  <a href="https://www.aulaindonesia.com/mouse-s-20-macro-7-buttons-breathe-light.html?o=terbaru" class="btn btn-light mouse-detail-button">Show Details</a>
+                </div><br>
+                <div class="mouse-box">
+                  <img src="images/page2.gif" alt="Aula s20" class="mouse-img" />
+                  <a href="https://www.aulaindonesia.com/mouse-s-20-macro-7-buttons-breathe-light.html?o=terbaru" class="btn btn-light mouse-detail-button">Show Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+          VanillaTilt.init(document.querySelectorAll(".mouse-box"), {
+            max: 35,
+            speed: 1000,
+            glare: true,
+          });
+        </script>
+
+        </div>
+        <script>
+            let bintang = document.getElementById('bintang');
+            let bulan = document.getElementById('bulan');
+            let gunung = document.getElementById('gunung');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let bukit = document.getElementById('bukit');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                bintang.style.left = value * 0.25 + 'px';
+                bulan.style.top = value * 1.05 + 'px';
+                gunung.style.top = value * 0.5 + 'px';
+                bukit.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                btn.style.marginTop = value *1.5 +'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+        <script src="js/music-list.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

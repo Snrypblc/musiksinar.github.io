@@ -1,0 +1,40 @@
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position:absolute;
+        right: 0;
+        top: 0;
+        width: 15vh;
+        height: 45vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly ;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        
+
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .sec h2{ 
+    color: aqua;
+    line-height: 52px;
+}
+
+.sec p{
+    line-height: 52px;
+}
+.sec.wrapper{
+    align-items: center;
+}
+
+}
+    
